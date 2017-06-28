@@ -1,36 +1,35 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@import "grid.scss";
+
+$font-title:'Raleway', sans-serif;
+$font-content: 'Yanone Kaffeesatz', sans-serif;
+$full-width: 100%;
+
+h3, h1, h4{
+  font-family: $font-title;
 }
-.container{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+p{
+  font-size: 18px;
+  font-family: $font-content;
 }
-.templateRow{
-  content: " ";
-  display: table;
+#nav{
+  margin-left: 35%;
 }
-.row{
-  &:before{
-    @extend .templateRow;
-  }
-  &:after{
-    @extend .templateRow;
-    clear: both;
-  }
+@mixin menu {
+  list-style: none;
+  display: inline-block;
 }
-[class*="col-"]{
-  min-height: 7px;
-  padding: 12px;
-  float: left;
+li{
+  @include menu;
+  font-family: $font-content;
+  font-size: 18px;
+  padding: 15px;
 }
-@function anchoDeColumnas($i) {
-  @return percentage(($i/12));
+.img-body{
+  width: $full-width;
 }
-@for $i from 1 through 12{
-  .col-#{$i}{
-    width: anchoDeColumnas($i);
-  }
+.img-container{
+  width: $full-width;
+}
+.asana{
+  border-radius: 50%;
 }

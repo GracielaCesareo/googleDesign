@@ -6,7 +6,8 @@
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 15px; }
 
 .templateRow, .row:before, .row:after {
   content: " ";
@@ -55,5 +56,31 @@
 
 .col-12 {
   width: 100%; }
+
+h3, h1, h4 {
+  font-family: "Raleway", sans-serif; }
+
+p {
+  font-size: 18px;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
+
+#nav {
+  margin-left: 35%; }
+
+li {
+  list-style: none;
+  display: inline-block;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 18px;
+  padding: 15px; }
+
+.img-body {
+  width: 100%; }
+
+.img-container {
+  width: 100%; }
+
+.asana {
+  border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */
