@@ -1,28 +1,53 @@
 @import "grid.scss";
+@import "offset.scss";
 
-$font-title:'Raleway', sans-serif;
-$font-content: 'Yanone Kaffeesatz', sans-serif;
+$font-title: 'Product Sans', sans-serif;
+$font-content: 'Roboto', sans-serif;
 $full-width: 100%;
+$darken-gray: #424242; //Gris Oscuro Títulos
+$lighten-gray: #5f6368; // Gris Claro fecha:
+$background-gray: #f1f3f4; // Gris Background
+$gray-color: #414549; // Gris Texto
+$blue-color: #4285f4; // Azul
 
-h3, h1, h4{
+
+// Gris Oscuro Títulos : #424242
+// Gris Claro fecha: #5f6368
+// Gris Texto : #414549
+// Gris Background : f1f3f4
+// Azul : #4285f4
+
+
+@mixin titulos {
   font-family: $font-title;
+  color: $darken-gray;
+  margin-bottom: 23px;
 }
-p{
-  font-size: 18px;
+ h3, h1, h4{
+  @include titulos;
+ }
+
+p, span{
   font-family: $font-content;
+  color: $gray-color;
+  margin-bottom: 23px;
 }
-#nav{
-  margin-left: 35%;
+.date{
+  color: $lighten-gray;
 }
 @mixin menu {
   list-style: none;
   display: inline-block;
+  font-family: $font-content;
 }
 li{
   @include menu;
+  padding: 10px;
+}
+a{
   font-family: $font-content;
-  font-size: 18px;
-  padding: 15px;
+  text-decoration: none;
+  color:$gray-color;
 }
 .img-body{
   width: $full-width;
@@ -30,6 +55,24 @@ li{
 .img-container{
   width: $full-width;
 }
+.newsletter{
+  background-color: $background-gray;
+}
+.profile{
+  padding: 24px 0 0;
+}
+@mixin section {
+  border-top: 2px solid $blue-color;
+  padding: 41px 0 0 0;
+}
+.section{
+  border-top: 3px solid $blue-color;
+  padding: 41px 0 0 0;
+}
 .asana{
   border-radius: 50%;
+}
+.icon{
+  width: 10%;
+  height: 10%;
 }

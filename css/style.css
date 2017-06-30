@@ -6,8 +6,7 @@
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px; }
+  margin: 0 auto; }
 
 .templateRow, .row:before, .row:after {
   content: " ";
@@ -57,22 +56,87 @@
 .col-12 {
   width: 100%; }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.templateRow, .row:before, .row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+[class*="col-"] {
+  min-height: 7px;
+  padding: 12px;
+  float: left; }
+
+.offset-1 {
+  margin-left: 8.33333%; }
+
+.offset-2 {
+  margin-left: 16.66667%; }
+
+.offset-3 {
+  margin-left: 25%; }
+
+.offset-4 {
+  margin-left: 33.33333%; }
+
+.offset-5 {
+  margin-left: 41.66667%; }
+
+.offset-6 {
+  margin-left: 50%; }
+
+.offset-7 {
+  margin-left: 58.33333%; }
+
+.offset-8 {
+  margin-left: 66.66667%; }
+
+.offset-9 {
+  margin-left: 75%; }
+
+.offset-10 {
+  margin-left: 83.33333%; }
+
+.offset-11 {
+  margin-left: 91.66667%; }
+
+.offset-12 {
+  margin-left: 100%; }
+
 h3, h1, h4 {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Product Sans", sans-serif;
+  color: #424242;
+  margin-bottom: 23px; }
 
-p {
-  font-size: 18px;
-  font-family: "Yanone Kaffeesatz", sans-serif; }
+p, span {
+  font-family: "Roboto", sans-serif;
+  color: #414549;
+  margin-bottom: 23px; }
 
-#nav {
-  margin-left: 35%; }
+.date {
+  color: #5f6368; }
 
 li {
   list-style: none;
   display: inline-block;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 18px;
-  padding: 15px; }
+  font-family: "Roboto", sans-serif;
+  padding: 10px; }
+
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #414549; }
 
 .img-body {
   width: 100%; }
@@ -80,7 +144,21 @@ li {
 .img-container {
   width: 100%; }
 
+.newsletter {
+  background-color: #f1f3f4; }
+
+.profile {
+  padding: 24px 0 0; }
+
+.section {
+  border-top: 3px solid #4285f4;
+  padding: 41px 0 0 0; }
+
 .asana {
   border-radius: 50%; }
+
+.icon {
+  width: 10%;
+  height: 10%; }
 
 /*# sourceMappingURL=style.css.map */
