@@ -23,14 +23,20 @@ $blue-color: #4285f4; // Azul
   color: $darken-gray;
   margin-bottom: 23px;
 }
- h3, h1, h4{
+ h1, h3, h4{
   @include titulos;
  }
-
 p, span{
   font-family: $font-content;
   color: $gray-color;
   margin-bottom: 23px;
+}
+.nav{
+  padding-top: 32px;
+  margin-top: -32px;
+  padding: 32px;
+  margin: 0;
+  width: 100%;
 }
 .date{
   color: $lighten-gray;
@@ -58,6 +64,10 @@ a{
 .newsletter{
   background-color: $background-gray;
 }
+.newsletter-item{
+  margin-top: 4px;
+  margin-bottom: 9px;
+}
 .profile{
   padding: 24px 0 0;
 }
@@ -67,7 +77,8 @@ a{
 }
 .section{
   border-top: 3px solid $blue-color;
-  padding: 41px 0 0 0;
+  padding: 41px 0;
+  margin-bottom: 80px;
 }
 .asana{
   border-radius: 50%;

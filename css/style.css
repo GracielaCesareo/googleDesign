@@ -114,7 +114,7 @@
 .offset-12 {
   margin-left: 100%; }
 
-h3, h1, h4 {
+h1, h3, h4 {
   font-family: "Product Sans", sans-serif;
   color: #424242;
   margin-bottom: 23px; }
@@ -123,6 +123,13 @@ p, span {
   font-family: "Roboto", sans-serif;
   color: #414549;
   margin-bottom: 23px; }
+
+.nav {
+  padding-top: 32px;
+  margin-top: -32px;
+  padding: 32px;
+  margin: 0;
+  width: 100%; }
 
 .date {
   color: #5f6368; }
@@ -147,12 +154,17 @@ a {
 .newsletter {
   background-color: #f1f3f4; }
 
+.newsletter-item {
+  margin-top: 4px;
+  margin-bottom: 9px; }
+
 .profile {
   padding: 24px 0 0; }
 
 .section {
   border-top: 3px solid #4285f4;
-  padding: 41px 0 0 0; }
+  padding: 41px 0;
+  margin-bottom: 80px; }
 
 .asana {
   border-radius: 50%; }
